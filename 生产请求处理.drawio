@@ -1,1 +1,71 @@
-<mxfile host="www.draw.io" modified="2019-10-16T14:21:57.012Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" version="12.1.2" etag="D2WZM7B3EBhJy3F4fxaD" type="github" pages="1"><diagram id="3oG3UncY6g05R-9aJo_f">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-10-16T14:29:34.385Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36" etag="lqVgPcANTPvAwDlWlKJV" version="12.1.2" type="github" pages="1">
+  <diagram id="3oG3UncY6g05R-9aJo_f" name="Page-1">
+    <mxGraphModel dx="956" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="480" height="410" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-1" target="o-bTh337Lytt6Xdy55XI-7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-1" value="生产者" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="110" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-7" target="o-bTh337Lytt6Xdy55XI-8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-7" value="&lt;span style=&quot;white-space: normal&quot;&gt;是否有权限写入topic&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="100" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-8" target="o-bTh337Lytt6Xdy55XI-9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-8" value="ack值是&lt;br&gt;否合法" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-9" target="o-bTh337Lytt6Xdy55XI-10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-9" value="写入本地磁盘/&lt;br&gt;文件系统缓存(linux)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="110" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-19" value="ack=all" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-10" target="o-bTh337Lytt6Xdy55XI-12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-10" value="ack=1/0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="205" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-12" value="&lt;span style=&quot;font-size: 9pt ; font-family: &amp;#34;hiddenhorzocr&amp;#34;&quot;&gt;请求会被保存在&lt;/span&gt;&lt;span style=&quot;font-size: 9pt ; font-family: &amp;#34;hiddenhorzocr&amp;#34;&quot;&gt;一&lt;/span&gt;&lt;span style=&quot;font-size: 9pt ; font-family: &amp;#34;hiddenhorzocr&amp;#34;&quot;&gt;个叫作炼狱的缓冲&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;hiddenhorzocr&amp;#34; ; font-size: 9pt&quot;&gt;区里，直到首领发现所有跟随者副本都复制了消息，晌应才会被返回给客户端。&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="320" width="230" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-14" value="broker" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="413" y="60" width="77" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-21" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-10" target="o-bTh337Lytt6Xdy55XI-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="260" as="sourcePoint"/>
+            <mxPoint x="400" y="210" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-22" value="返回响应" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="o-bTh337Lytt6Xdy55XI-21">
+          <mxGeometry x="-0.0859" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-23" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o-bTh337Lytt6Xdy55XI-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="380" as="sourcePoint"/>
+            <mxPoint x="130" y="150" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o-bTh337Lytt6Xdy55XI-24" value="返回响应" style="text;html=1;resizable=0;points=[];align=center;verticalAlign=middle;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="o-bTh337Lytt6Xdy55XI-23">
+          <mxGeometry x="-0.2397" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
